@@ -22,7 +22,7 @@
 
   
 
-  <title>Hello Blog | 系稻谷啊</title>
+  <title>洛谷P1765题解 | 系稻谷啊</title>
 
   
 
@@ -99,20 +99,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Hello Blog</h1>
+          <h1 class="title-wrap">洛谷P1765题解</h1>
           <h2 class="title-sub-wrap">
             <strong>bilibili_daogu</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2024-07-26T06:21:20.028Z" itemprop="datePublished">2024-07-26</time>
+            <time  class="article-date" datetime="2020-03-01T12:00:00.000Z" itemprop="datePublished">2020-03-01</time>
           </h2>
           
             <h2 class="last-time">
               <span>最后更新于</span>
-              <time  class="article-updated" datetime="2024-08-08T07:14:38.990Z" itemprop="dateUpdated">2024-08-08</time>
+              <time  class="article-updated" datetime="2024-08-08T07:26:38.980Z" itemprop="dateUpdated">2024-08-08</time>
             </h2>
           
           
-            <h2 id="/2024/07/26/hello-world/" class="title-sub-wrap leancloud_visitors" data-flag-title="Hello Blog">
+            <h2 id="/2020/03/01/%E6%B4%9B%E8%B0%B7P1765%E9%A2%98%E8%A7%A3/" class="title-sub-wrap leancloud_visitors" data-flag-title="洛谷P1765题解">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
@@ -121,6 +121,8 @@
   
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E9%A2%98%E8%A7%A3/">🏷️ 题解</a></li>
   
 </ul>
         </div>
@@ -144,25 +146,37 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="手机"><a href="#手机" class="headerlink" title="手机"></a>手机</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>一般的手机的键盘是这样的：</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/yq2orii6.png"></p>
+<p>要按出英文字母就必须要按数字键多下。例如要按出 x 就得按 9 两下，第一下会出  w，而第二下会把 w变成 x。0 键按一下会出一个空格。</p>
+<p>你的任务是读取若干句只包含英文小写字母和空格的句子，求出要在手机上打出这个句子至少需要按多少下键盘。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一行句子，只包含英文小写字母和空格，且不超过 200 个字符。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一行一个整数，表示按键盘的总次数。</p>
+<h2 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i have a dream</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">23</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>NOI 导刊 2010 普及（10）</p>
+<h2 id="解答-注释："><a href="#解答-注释：" class="headerlink" title="解答+注释："></a>解答+注释：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span> <span class="comment">// 包含所有标准库头文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义一个字符串数组，每个字符串代表一个数字键上的字母</span></span><br><span class="line">    string ss[<span class="number">9</span>] = &#123;<span class="string">&quot;abc&quot;</span>, <span class="string">&quot;def&quot;</span>, <span class="string">&quot;ghi&quot;</span>, <span class="string">&quot;jkl&quot;</span>, <span class="string">&quot;mno&quot;</span>, <span class="string">&quot;pqrs&quot;</span>, <span class="string">&quot;tuv&quot;</span>, <span class="string">&quot;wxyz&quot;</span>, <span class="string">&quot; &quot;</span>&#125;;</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>; <span class="comment">// 初始化计数器，用于记录按键次数</span></span><br><span class="line">    string str; <span class="comment">// 定义一个字符串变量，用于存储输入的字符串</span></span><br><span class="line">    <span class="built_in">getline</span>(cin, str); <span class="comment">// 从标准输入读取一行字符串，并存储在str中</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历输入字符串的每一个字符</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; str.<span class="built_in">length</span>(); i++) &#123;</span><br><span class="line">        <span class="comment">// 遍历字符串数组中的每一个字符串</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++) &#123;</span><br><span class="line">            <span class="comment">// 遍历当前字符串中的每一个字符</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> m = <span class="number">0</span>; m &lt; ss[j].<span class="built_in">size</span>(); m++) &#123;</span><br><span class="line">                <span class="comment">// 如果当前字符与某个数字键上的字符匹配</span></span><br><span class="line">                <span class="keyword">if</span>(str[i] == ss[j][m]) &#123;</span><br><span class="line">                    <span class="comment">// 计数器增加该字符在数字键上的位置加1</span></span><br><span class="line">                    cnt += m + <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 输出按键次数</span></span><br><span class="line">    cout &lt;&lt; cnt;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">// 程序结束</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></h2>
       </section>
 
       
       
         <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2024/07/26/hello-world/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hello Blog</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
           
           
             <div class="article-nav-item layout-padding">
@@ -170,8 +184,8 @@
     
     <div class="card-text">
       
-        <a href="/2020/03/01/%E6%B4%9B%E8%B0%B7P1765%E9%A2%98%E8%A7%A3/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">洛谷P1765题解</h2>
+        <a href="/2020/03/01/%E6%B4%9B%E8%B0%B7P5832%E9%A2%98%E8%A7%A3/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">洛谷P5832题解</h2>
         </a>
       
       <div class="card-text--row">Older</div>
